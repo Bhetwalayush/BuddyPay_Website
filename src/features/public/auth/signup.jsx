@@ -10,6 +10,7 @@ const Signup = () => {
     confirmPassword: '',
     pin: '',
     device: 'Web', 
+    email: '',
   });
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
@@ -39,6 +40,7 @@ const Signup = () => {
           password: formData.password,
           pin: formData.pin,
           device: formData.device,
+          email: formData.email,
         }),
       });
 
